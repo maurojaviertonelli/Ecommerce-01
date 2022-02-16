@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head')%>
+
+    <body>
+        <%- include('../partials/header')%>
+            <h2>Crear producto</h2>
+            <section class="section">
+                <form method="POST" action="create" enctype="multipart/form-data">
+                    <div class="campo">
+                        <label for="name">Nombre de producto</label>
+                        <input type="text" name="name">
+                    </div>
+                    <div class="campo">
+                        <label for="description">Descripción</label>
+                        <textarea name="description"></textarea>
+                    </div>
+                    <div class="campo">
+                        <label for="image">image</label>
+                        <input type="file" name="image" accept=".png, .webp, .jpg ">  <!--podemos agregar multiple en vez de accept para aceptar multiples archivos-->
+                    </div>
+                    <div class="campo">
+                        <label for="editorials_idEditorial">Red</label>
+                        <select name="editorials_idEditorial">
+                            <option disabled selected>--Seleccionar--</option>
+                            <% for(red of redes){%> 
+                                <option value="<%= red[0]%>"><%=red[1]%></option>
+                                <% } %> 
+                                
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label for="categories_idCategory">Categoría</label>
+                        <select name="categories_idCategory">
+                            <option disabled selected>--Seleccionar--</option>
+                            <% for(categoria of categorias){%> 
+                                <option value="<%= categoria[0]%>"><%=categoria[1]%></option>
+                                <% } %> 
+                                
+                         </select>
+                    </div>
+                    <div class="campo">
+                        <label for="price">Precio</label>
+                        <input type="number" name="price" min="0">
+                    </div>
+                    <div class="contenedor-btn ">
+                        <button type="submit" class="btn">Crear producto</button>
+                        <button type="reset" class="btn">Borrar todo</button>
+                    </div>
+                </form>
+            </section>
+            <%- include('../partials/footer')%>
+    </body>
+
+</html>

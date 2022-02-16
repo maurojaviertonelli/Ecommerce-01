@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head')%>
+
+    <body>
+        <%- include('../partials/header')%>
+            <div class="products-container section">
+                <%listado.forEach(product=>{%>
+                    <div class="product-card" data-id="<%= product.idProduct%>">
+                        <h3>
+                            <%= product.name%>
+                        </h3>
+                        <div>
+                            <img src="<%=product.image%>" alt="Imagen de <%= product.name%>" class="imagen-productos">
+                        </div>
+                        <div>
+                            <p class="precio">
+                                $
+                                <%= product.price%>
+                            </p>
+                            <% if(session && session.user_type.data[0]==1){ %>
+                                <div class="contenedor-btn">
+                                    <a href="/products/edit/<%=product.idProduct%>" class="btn button-edit">
+                                        Editar
+                                    </a>
+                                    <form action="/products/delete/<%=product.idProduct%>?_METHOD=DELETE" method="POST">
+                                        <button type="submit" class="btn button-edit">Eliminar</button>
+                                    </form>
+                                </div>
+                            <% } %>
+                        </div>
+                    </div>
+                    <%})%>
+            </div>
+            <%- include('../partials/footer')%>
+                <script src="/public/js/btns.js">
+                </script>
+    </body>
+
+</html>

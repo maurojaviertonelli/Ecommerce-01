@@ -1,0 +1,42 @@
+[
+ {
+  "id": 1,
+  "nombre": "Lionel",
+  "apellido": "Messi",
+  "email": "messi@hotmail.com",
+  "contrasena": "$2a$10$kij9YOQ618uv8IJM7pf1OuFIdPzJLBz4ocW12tSVAIatdZBUjtQ3S",
+  "confirmacion": "$2a$10$EssDsJi5vzroOxLuOeiaZOa.VENnUIGD3pItmxpiorY9eMgfzdVq2",
+  "pageTitle": "Registro",
+  "avatar": "1626795883974.jpg"
+ },
+ {
+  "id": 2,
+  "nombre": "Carlitos",
+  "apellido": "Bala",
+  "email": "carlitos123@hotmail.com",
+  "contrasena": "$2a$10$N3JzNmU9MC0plvvkvsINZuvgBLg9ervBQY7ZsXJ25Y6ZSAbHhpEka",
+  "confirmacion": "$2a$10$bXQCOpvCmhXvVq1hUeh8w.7ItlZczuFBgqj3G0bZLRrp3AMRI8Zdu",
+  "pageTitle": "Registro",
+  "avatar": "1626825902359.png"
+ },
+ {
+  "id": 3,
+  "nombre": "daniel",
+  "apellido": "balda",
+  "email": "danielbalda@gmail.com",
+  "contrasena": "$2a$10$s8AbVzeWsC8HHblh1PsDNeYcBLIp8Z5YtbQBH/S27T/9RTw/jKnra",
+  "confirmacion": "$2a$10$CrJEp9OpiD78uxBp/qelE.U5xB9n5CCcMdzYOf9Y.6UnTfQNTOz.6",
+  "pageTitle": "Registro",
+  "avatar": "1630004915730.png"
+ },
+ {
+  "id": 4,
+  "nombre": "jua",
+  "apellido": "perez",
+  "email": "franespinola@hotmail.com",
+  "contrasena": "$2a$10$boZUJ7E6uaWdTgBZNf8PIeHvqY3SkHoCfyGRdZ4.xQv3ULhucsSDm",
+  "confirmacion": "$2a$10$t9965bWjKm4B2FQgoK3XZ.30f1xxMPju0E0aNEOnqxt8D2/UoRGCe",
+  "pageTitle": "Registro",
+  "avatar": "1630005774315.png"
+ }
+]
